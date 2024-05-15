@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('Pchem.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+	    position: relative;
+        }
+        nav {
+            position: absolute;
+            bottom: 170px;
+            left: 0%;
+            transform: translateX(0%);
+        }
+        nav a {
+            display: inline-block;
+            margin: 0 88px;
+        }
+        nav a img {
+            width: 375px;           
+	    height: auto;
+        }
+        .button1 {
+            position: absolute;
+            left: 0px;
+        }
+        .button2 {
+            position: absolute;
+            left: 448px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="BPE.html" class="button1"><img src="Incendio.png" alt="Button 1"></a>
+        <a href="FPD.html" class="button2"><img src="Glacius.png" alt="Button 2"></a>
+    </nav>
+
+    </style>
+</head>
+<body>
+</body>
+</html>

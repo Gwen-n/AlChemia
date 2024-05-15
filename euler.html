@@ -83,55 +83,83 @@
             margin-top: 50px;
         }
 
-        input, button {
-            margin-top: 10px;
-            width: calc(100% - 20px);
+        input[type="number"] {
+            width: 350px;
+            height: 50px;
             padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            margin-bottom: 15px;
             box-sizing: border-box;
-            display: block;        }
-
-        #function {
-            margin-top: 20px;        }
-
-        #x0 {
-            margin-top: 30px;
+            font-family: Times New Roman;
+            font-size: 30px;
+            color: #4f2f01;
+            text-align: center;
+            cursor: url('wand.png'), auto;
+            line-height: 50px;
         }
 
-        #y0 {
-            margin-top: 40px;        }
+        input[type="text"] {
+            width: 350px;
+            height: 50px;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            font-family: Times New Roman;
+            font-size: 30px;
+            color: #4f2f01;
+            text-align: center;
+            cursor: url('wand.png'), auto;
+            line-height: 50px;
+        }
 
-        #h {
-            margin-top: 50px;        }
-
-        #steps {
-            margin-top: 60px;        }
 
         button {
-            background-color: #4CAF50;
+            background-color: #967639;
             color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
+            cursor: url('wand.png'), auto;
         }
 
+
         button:hover {
-            background-color: #45a049;
+            background-color: #000000;
         }
+
+        .extra-button {
+            position: absolute;
+            top: 730px;
+            right: 100px;
+            cursor: url('wand.png'), auto;
+        }
+
+        .extra-button img {
+            width: 200px;
+            height: auto;
+            cursor: url('wand.png'), auto;
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
         <form onsubmit="event.preventDefault(); calculate();">
-            <input type="text" id="function" placeholder="Enter function, e.g., x + y">
-            <input type="number" id="x0" step="any" placeholder="Enter initial x">
-            <input type="number" id="y0" step="any" placeholder="Enter initial y">
-            <input type="number" id="h" step="any" placeholder="Enter step size">
-            <input type="number" id="steps" placeholder="Enter number of steps">
+            <input type="text" id="function" placeholder="Enter function, e.g., x + y" style="position: absolute; top: 450px; left: 1000px;" required>
+            <input type="number" id="x0" step="any" placeholder="Enter initial x" style="position: absolute; top: 500px; left: 1000px;" required>
+            <input type="number" id="y0" step="any" placeholder="Enter initial y" style="position: absolute; top: 550px; left: 1000px;" required>
+            <input type="number" id="h" step="any" placeholder="Enter step size" style="position: absolute; top: 600px; left: 1000px;" required>
+            <input type="number" id="steps" placeholder="Enter number of steps" style="position: absolute; top: 650px; left: 1000px;" required>
 
             <button type="submit">Calculate</button>
         </form>
 
         <div id="results"></div>
     </div>
+
+<a href="calcadmath.html" class="extra-button">
+    <img src="back.png" alt="Extra Button">
+</a>
+
 </body>
 </html>
